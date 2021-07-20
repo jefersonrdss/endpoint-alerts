@@ -22,8 +22,6 @@ SMTP_TO=email1@example.com,email2@example.com
 ```
 <br>
 
-### URL do endpoint: 
-
 ```js
 /**
  * Projeto: End Point for Alerts
