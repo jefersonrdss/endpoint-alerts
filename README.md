@@ -1,9 +1,9 @@
-# End Point para Alertas via POST HTTP Notification
+## End Point para Alertas via POST HTTP Notification
 
-## <strong>v1.0.0</strong> - Recebe os alertas do tipo HTTP Notification do Graylog Server
-### A aplicação receberá no endereço <strong>http://ipServer:3001/graylog/alert</strong> o POST enviado pelo servidor Graylog e após tratar o objeto JSON, enviará um email utilizando as configurações setadas no arquivo <strong>.env</strong><br><br>
+### <strong>v1.0.0</strong> - Recebe os alertas do tipo HTTP Notification do Graylog Server
+#### A aplicação receberá no endereço <strong>http://ipServer:3001/graylog/alert</strong> o POST enviado pelo servidor Graylog e após tratar o objeto JSON, enviará um email utilizando as configurações setadas no arquivo <strong>.env</strong><br><br>
 
-### O envio de email da aplicação utiliza um servidor SMTP previamente configurado no arquivo .env na raiz do projeto, conforme abaixo
+#### O envio de email da aplicação utiliza um servidor SMTP previamente configurado no arquivo .env na raiz do projeto, conforme abaixo
 
 ```env
 # Configurantion endPoint Alerts
