@@ -19,10 +19,4 @@ router.post("/graylog/alert", (request, response) => {
     })
 })
 
-
-// Rota PoST para receber os alertas do Grafana Server
-router.post("/grafana/alert", (request, response) => {
-    // implements
-})
-
 export default router
