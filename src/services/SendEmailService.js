@@ -7,7 +7,7 @@
 import 'dotenv/config';
 import nodemailer from "nodemailer"
 
-class SendEmailGraylogService {
+class SendEmailService {
 
     // construtor
     constructor(subject, message) {
@@ -54,4 +54,4 @@ class SendEmailGraylogService {
     }
 }
 
-export default SendEmailGraylogService
+export default SendEmailService

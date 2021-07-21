@@ -5,7 +5,7 @@
  */
 
 import moment from "moment"
-import SendEmailGraylogService from "../services/SendEmailGraylogService.js"
+import SendEmailService from "../services/SendEmailService.js"
 
 class SendEmailGraylogController {
 
@@ -30,15 +30,15 @@ class SendEmailGraylogController {
         `
         //*** fim corpo email */
 
-        const sendEmailGraylogService = new SendEmailGraylogService(event_definition_title, messageEmail) // instancia da classe SendEmailService
-        const destinations = sendEmailGraylogService.destination.split(',') // lista de destinos separado por virgula
+        const sendEmailService = new SendEmailService(event_definition_title, messageEmail) // instancia da classe SendEmailService
+        const destinations = sendEmailService.destination.split(',') // lista de destinos separado por virgula
 
         // faz o envio pra todos os emails da lista
         destinations.forEach(destination => {
 
-            // chama metodo async da classe sendEmailGraylogService
-            sendEmailGraylogService.sendEmail(destination).then(() => {
-                console.log(`${now} ${event_definition_title} - E-mail enviado para: ${destination}`)
+            // chama metodo async da classe sendEmailService
+            sendEmailService.sendEmail(destination).then(() => {
+                console.log(`${now} Alert Graylog ${event_definition_title} - E-mail enviado para: ${destination}`)
             }).catch((error) => {
 
                 console.error(`ERROR: ${error.message}`) // mensagem de erro

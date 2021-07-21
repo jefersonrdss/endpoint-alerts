@@ -6,14 +6,24 @@
 
 import Router from "express"
 import SendEmailGraylogController from "./controllers/SendEmailGraylogController.js"
+import SendEmailGrafanaController from "./controllers/SendEmailGrafanaController.js"
 
 const sendEmailGraylogController = new SendEmailGraylogController()
+const sendEmailGrafanaController = new SendEmailGrafanaController()
 
 const router = Router()
 
 // Rota POST para receber os alertas do Graylog Server
 router.post("/graylog/alert", (request, response) => {
     sendEmailGraylogController.handle(request, response).catch((error) => {
+        console.error(`ERROR: ${error.message}`)
+        response.sendStatus(400) // status code 400
+    })
+})
+
+// Rota PoST para receber os alertas do Grafana Server
+router.post("/grafana/alert", (request, response) => {
+    sendEmailGrafanaController.handle(request, response).catch((error) => {
         console.error(`ERROR: ${error.message}`)
         response.sendStatus(400) // status code 400
     })
