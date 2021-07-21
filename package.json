@@ -1,7 +1,7 @@
 {
   "name": "endpoint-alerts",
   "version": "2.0.0",
-  "description": "End Point Alerts HTTP Notification Graylog Server",
+  "description": "End Point Alerts HTTP Notification",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
