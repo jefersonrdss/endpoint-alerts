@@ -16,4 +16,4 @@ server.use(express.json()) // application/json
 server.use(router) // declaracao de rotas
 
 // server port 3001
-server.listen(3001, () => console.log(`${now} Server is running...`))
+server.listen(3001, () => console.log(`${now} Server is running on port 3001`))

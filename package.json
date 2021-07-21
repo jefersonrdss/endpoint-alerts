@@ -1,6 +1,6 @@
 {
-  "name": "endpoint-alerts-graylog",
-  "version": "1.0.0",
+  "name": "endpoint-alerts",
+  "version": "2.0.0",
   "description": "End Point Alerts HTTP Notification Graylog Server",
   "main": "app.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "author": "Jeferson Rodrigues",
   "license": "ISC",
-  "type":"module",
+  "type": "module",
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
