@@ -20,7 +20,7 @@ class SendEmailGrafanaController {
         //construir mensagem que ira no corpo do email
         const messageEmail = `
             <strong><h3>${title}</h3></strong>
-            <strong><h4>${ruleName}</h4></strong><br>
+            <strong><h4>${ruleName}</h4></strong>
             <strong>${state}</strong> ${message}
         `
 
