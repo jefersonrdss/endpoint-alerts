@@ -13,7 +13,7 @@
 #### O envio de email da aplicação utiliza um servidor SMTP previamente configurado no arquivo .env na raiz do projeto, conforme abaixo
 
 ```env
-# Configurantion endPoint Alerts
+# Configurantion endPoint Alert
 
 # Email
 SMTP_SERVER=
